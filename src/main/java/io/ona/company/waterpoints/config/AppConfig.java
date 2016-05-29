@@ -12,23 +12,7 @@ import org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAda
 public class AppConfig {
 
     public AppConfig() {
-
     }
-
-    /**
-     * @Bean public ObjectMapper createObjectMapper() {
-     * 
-     *       return new ObjectMapper(); }
-     **/
-
-    /**
-     * @Bean public MappingJacksonHttpMessageConverter createJacksonConfig() {
-     * 
-     *       MappingJacksonHttpMessageConverter
-     *       mappingJacksonHttpMessageConverter = new
-     *       MappingJacksonHttpMessageConverter(); return
-     *       mappingJacksonHttpMessageConverter; }
-     **/
 
     @SuppressWarnings("deprecation")
     @Bean
@@ -46,30 +30,4 @@ public class AppConfig {
                 .setMessageConverters(httpMessageConverters);
         return annotationMethodHandlerAdapter;
     }
-
-    /**
-     * @Bean public ObjectMapper createObjectMapper() {
-     * 
-     *       return new ObjectMapper(); }
-     * 
-     * 
-     * 
-     * @Bean MappingJackson2HttpMessageConverter
-     *       createMappingJackson2HttpMessageConverter( ObjectMapper
-     *       objectMapper) {
-     * 
-     *       MappingJackson2HttpMessageConverter
-     *       mappingJackson2HttpMessageConverter = new
-     *       MappingJackson2HttpMessageConverter();
-     * 
-     *       //Jackson2ObjectMapperFactoryBean objectMapperFactory = new
-     *       Jackson2ObjectMapperFactoryBean(); //ObjectMapper objectMapper =
-     *       objectMapperFactory.
-     * 
-     *       mappingJackson2HttpMessageConverter.setObjectMapper( objectMapper
-     *       );
-     * 
-     *       return mappingJackson2HttpMessageConverter; }
-     **/
-
 }
