@@ -1,7 +1,7 @@
 package io.ona.company.waterpoints;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.springframework.stereotype.Component;
 
@@ -21,7 +21,7 @@ public class CommunitiesWaterPointsReport {
     private int brokenWaterPoints;
 
     public CommunitiesWaterPointsReport() {
-        communityNameToCommunityWaterPointsMap = new HashMap<>();
+        communityNameToCommunityWaterPointsMap = new TreeMap<>();
     }
 
     public synchronized void updateCommunityWaterPoints(String communityName,
