@@ -1,5 +1,6 @@
 package io.ona.company.waterpoints.config;
 
+import org.apache.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -27,6 +28,7 @@ import org.springframework.web.servlet.DispatcherServlet;
  */
 public class StartServer {
 
+    private Logger logger = Logger.getLogger(StartServer.class);
     private Server server;
 
     public StartServer() {
@@ -62,8 +64,12 @@ public class StartServer {
 
     public void start(int port) throws Exception {
 
+        logger.info("Starting up Server");
         configureWebContext(port);
         server.start();
+        logger.info("Successfully started Server. "
+                + "Visit http://localhost:8090/waterpoints/summary.do for the "
+                + "water point summary.");
     }
 
     public void stop() throws Exception {

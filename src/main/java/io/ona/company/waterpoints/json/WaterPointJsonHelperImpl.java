@@ -5,6 +5,8 @@ import java.util.Iterator;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import io.ona.company.waterpoints.CommunitiesWaterPointsReport;
@@ -12,6 +14,7 @@ import io.ona.company.waterpoints.CommunitiesWaterPointsReport;
 @Component
 public class WaterPointJsonHelperImpl implements WaterPointJsonHelper {
 
+    private Logger logger = Logger.getLogger(WaterPointJsonHelperImpl.class);
     private static String COMMUNITIES_VILLAGES_JSON_KEY =
             "communities_villages";
     private static String WATER_FUNCTIONING_JSON_KEY = "water_functioning";
@@ -49,7 +52,7 @@ public class WaterPointJsonHelperImpl implements WaterPointJsonHelper {
                         .append(rawStatus)
                         .append(", for the key ")
                         .append(WATER_FUNCTIONING_JSON_KEY);
-                System.err.println(errrorSb.toString());
+                logger.warn(errrorSb.toString());
                 continue;
             }
 
