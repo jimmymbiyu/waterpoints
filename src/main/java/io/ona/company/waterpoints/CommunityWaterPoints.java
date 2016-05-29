@@ -1,5 +1,11 @@
 package io.ona.company.waterpoints;
 
+/**
+ * Details the status of the water points for one community.
+ * 
+ * @author Ndung'u Mbiyu
+ *
+ */
 public class CommunityWaterPoints {
 
     private int functionalWaterPoints = 0;

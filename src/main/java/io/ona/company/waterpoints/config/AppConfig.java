@@ -7,6 +7,11 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;
 
+/**
+ * Configures Spring beans programmatically.
+ *
+ * @author Ndung'u Mbiyu
+ */
 @Configuration
 @ComponentScan("io.ona.company.waterpoints")
 public class AppConfig {

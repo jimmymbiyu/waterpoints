@@ -24,7 +24,7 @@ import org.springframework.web.servlet.DispatcherServlet;
  * Please read the README.md for further details of running the service and its
  * unit and integration tests.
  *
- * @author Ndung'u
+ * @author Ndung'u Mbiyu
  */
 public class StartServer {
 

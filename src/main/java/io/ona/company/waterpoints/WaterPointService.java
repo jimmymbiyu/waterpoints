@@ -11,10 +11,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import io.ona.company.waterpoints.json.WaterPointJsonHelper;
 
+/**
+ * Queries the remote service
+ * https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.
+ * json, and forwards the result to {@link WaterPointJsonHelper} for analysis.
+ * 
+ * @author Ndung'u Mbiyu
+ *
+ */
 @Controller
 public class WaterPointService {
 

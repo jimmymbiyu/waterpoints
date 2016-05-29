@@ -1,5 +1,13 @@
 package io.ona.company.waterpoints.json;
 
+/**
+ * 
+ * Thrown when a String cannot be converted to a {@link WaterPointStatus}
+ * member.
+ * 
+ * @author Ndung'u Mbiyu
+ *
+ */
 public class UnknownWaterPointStatusTextException extends Exception {
 
     /**

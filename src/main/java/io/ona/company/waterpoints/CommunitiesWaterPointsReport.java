@@ -7,6 +7,12 @@ import org.springframework.stereotype.Component;
 
 import io.ona.company.waterpoints.json.WaterPointStatus;
 
+/**
+ * Aggregates the information of all the water points for all communities.
+ * 
+ * @author Ndung'u Mbiyu
+ *
+ */
 @Component
 public class CommunitiesWaterPointsReport {
 
