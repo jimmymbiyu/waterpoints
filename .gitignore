@@ -14,4 +14,7 @@ hs_err_pid*
 # IDE files
 .classpath
 .project
+.settings
 target
+test-output
+.DS_Store
