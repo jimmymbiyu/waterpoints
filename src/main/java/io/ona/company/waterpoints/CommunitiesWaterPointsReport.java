@@ -5,6 +5,8 @@ import java.util.TreeMap;
 
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.ona.company.waterpoints.json.WaterPointStatus;
 
 /**
@@ -18,6 +20,7 @@ public class CommunitiesWaterPointsReport {
 
     private Map<String, CommunityWaterPoints> communityNameToCommunityWaterPointsMap;
     private int workingWaterPoints;
+    @JsonIgnore
     private int brokenWaterPoints;
 
     public CommunitiesWaterPointsReport() {

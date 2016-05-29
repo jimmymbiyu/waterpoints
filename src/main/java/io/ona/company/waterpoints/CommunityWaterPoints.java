@@ -1,5 +1,7 @@
 package io.ona.company.waterpoints;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * Details the status of the water points for one community.
  * 
@@ -8,7 +10,9 @@ package io.ona.company.waterpoints;
  */
 public class CommunityWaterPoints {
 
+    @JsonIgnore
     private int functionalWaterPoints = 0;
+    @JsonIgnore
     private int brokenWaterPoints = 0;
 
     protected CommunityWaterPoints() {
