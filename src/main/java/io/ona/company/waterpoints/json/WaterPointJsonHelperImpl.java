@@ -3,11 +3,11 @@ package io.ona.company.waterpoints.json;
 import java.io.IOException;
 import java.util.Iterator;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.ona.company.waterpoints.CommunitiesWaterPointsReport;
 
@@ -24,10 +24,15 @@ public class WaterPointJsonHelperImpl implements WaterPointJsonHelper {
 
     @Override
     public CommunitiesWaterPointsReport processJson(String json)
-            throws IOException {
+            throws JsonParsingException {
 
         ObjectMapper objectMapper = new ObjectMapper();
-        JsonNode node = objectMapper.readValue(json, JsonNode.class);
+        JsonNode node;
+        try {
+            node = objectMapper.readValue(json, JsonNode.class);
+        } catch (IOException e1) {
+            throw new JsonParsingException(e1);
+        }
         Iterator<JsonNode> records = node.elements();
 
         CommunitiesWaterPointsReport waterPointSummaryReport =
