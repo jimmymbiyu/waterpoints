@@ -35,6 +35,9 @@ To package and run the application, run
 	
 Navigate to http://localhost:8090/waterpoints/summary.do to view the
 summary of community water points.
+
+To close the program, issue the Control-C command on the terminal that
+lauched the program.
 	
 ========================================================================
 4. Importing the module in an IDE
