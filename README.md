@@ -33,6 +33,9 @@ To package and run the application, run
 	mvn clean package
 	java -jar target/waterpoints-1.0-SNAPSHOT-jar-with-dependencies.jar
 	
+Navigate to http://localhost:8090/waterpoints/summary.do to view the
+summary of community water points.
+	
 ========================================================================
 4. Importing the module in an IDE
 ========================================================================
@@ -43,3 +46,12 @@ To import the module into an IDE, run
 	mvn idea:idea	     (for IntelliJ IDEA IDE)
 	
 to create projects for the IDE of your choice and then import the project.
+
+========================================================================
+5. Tests
+========================================================================
+
+There are unit tests in WaterPointJsonHelperTest that run against a
+much smaller but similar dataset. There is also an integration test in
+WaterPointServiceTest that asserts that the query to the remote service
+yields a result.
