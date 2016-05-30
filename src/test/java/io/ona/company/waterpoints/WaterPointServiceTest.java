@@ -1,7 +1,6 @@
 package io.ona.company.waterpoints;
 
 import static org.testng.Assert.assertNotNull;
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,6 +52,6 @@ public class WaterPointServiceTest extends AbstractTestNGSpringContextTests {
         CommunitiesWaterPointsReport report2 =
                 waterPointService.getWaterPointSummaryReport();
 
-        assertEquals(report, report2);
+        assertTrue(report.equals(report2));
     }
 }
