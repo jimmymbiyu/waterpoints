@@ -1,8 +1,0 @@
-#!/usr/bin/env groovy
-
-def fileText = new File("/Users/nmbiyu/workspaces/personal/waterpoints/src/main/resources/water_points.json").text
-def json = new groovy.json.JsonSlurper().parseText(fileText)
-println json.prettyPrint
-json.each {
-    println it.communities_villages + it.water_functioning
-}
