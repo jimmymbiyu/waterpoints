@@ -48,7 +48,7 @@ public class CommunitiesWaterPointsReport {
                 communityWaterPoints);
     }
 
-    public Map<String, CommunityWaterPoints> getWaterPoints() {
+    public Map<String, CommunityWaterPoints> getCommunities() {
 
         return communityNameToCommunityWaterPointsMap;
     }

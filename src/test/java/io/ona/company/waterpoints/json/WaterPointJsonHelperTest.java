@@ -62,7 +62,7 @@ public class WaterPointJsonHelperTest {
                 waterPointJsonHelper.processJson(json);
 
         CommunityWaterPoints communityWaterPoints = communitiesWaterPointsReport
-                .getWaterPoints().get("Gumaryili");
+                .getCommunities().get("Gumaryili");
 
         assertEquals(communityWaterPoints.getTotalWaterPoints(), 1);
         assertEquals(communityWaterPoints.getBrokenWaterPoints(), 0);
