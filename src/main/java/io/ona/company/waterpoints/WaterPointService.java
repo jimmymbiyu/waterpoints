@@ -29,6 +29,7 @@ public class WaterPointService {
     public static String WATER_POINT_SERVICE_ENDPOINT =
             "https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json";
 
+    @Autowired
     private WaterPointJsonHelper waterPointJsonHelper;
 
     private HttpClient httpClient;
@@ -67,12 +68,5 @@ public class WaterPointService {
 
         String content = contentResponse.getContentAsString();
         return content;
-    }
-
-    @Autowired
-    public void setWaterPointJsonHelper(
-            WaterPointJsonHelper waterPointJsonHelper) {
-
-        this.waterPointJsonHelper = waterPointJsonHelper;
     }
 }
