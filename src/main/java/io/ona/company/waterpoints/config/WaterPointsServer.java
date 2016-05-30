@@ -26,12 +26,12 @@ import org.springframework.web.servlet.DispatcherServlet;
  *
  * @author Ndung'u Mbiyu
  */
-public class StartServer {
+public class WaterPointsServer {
 
-    private Logger logger = Logger.getLogger(StartServer.class);
+    private Logger logger = Logger.getLogger(WaterPointsServer.class);
     private Server server;
 
-    public StartServer() {
+    public WaterPointsServer() {
     }
 
     private void configureWebContext(int port) {
@@ -81,7 +81,7 @@ public class StartServer {
 
     public static void main(String[] args) throws Exception {
 
-        StartServer server = new StartServer();
+        WaterPointsServer server = new WaterPointsServer();
         server.start(8090);
     }
 

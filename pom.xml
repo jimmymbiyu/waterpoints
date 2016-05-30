@@ -48,7 +48,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>io.ona.company.waterpoints.config.StartServer</mainClass>
+							<mainClass>io.ona.company.waterpoints.config.WaterPointsServer</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

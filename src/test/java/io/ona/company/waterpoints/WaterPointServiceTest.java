@@ -10,19 +10,19 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.ona.company.waterpoints.config.AppConfig;
-import io.ona.company.waterpoints.config.StartServer;
+import io.ona.company.waterpoints.config.WaterPointsServer;
 
 @ContextConfiguration(classes = AppConfig.class)
 public class WaterPointServiceTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
     WaterPointService waterPointService;
-    StartServer server;
+    WaterPointsServer server;
 
     @BeforeClass
     public void startServer() throws Exception {
 
-        server = new StartServer();
+        server = new WaterPointsServer();
         server.start(8091);
     }
 
