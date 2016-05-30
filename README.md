@@ -1,25 +1,18 @@
-========================================================================
-Author: Ndung'u Mbiyu
-Date:	29th May 2016
-========================================================================
+##### Author: Ndung'u Mbiyu
+##### Date:	29th May 2016
 
-1. Required Software
-========================================================================
+##### 1. Required Software
 
 - JDK 7
 - Maven 3
 
-========================================================================
-2. More Information
-========================================================================
+##### 2. More Information
 The following files contain more information on this project.
 
 - codingChallenge.txt details the problem that this project attempts to
 solve.
 
-========================================================================
-3. Running the module
-========================================================================
+##### 3. Running the module
 
 To run the module, open a terminal and navigate to the root directory of
 the project.
@@ -39,9 +32,7 @@ summary of community water points.
 To close the program, issue the Control-C command on the terminal that
 lauched the program.
 	
-========================================================================
-4. Importing the module in an IDE
-========================================================================
+##### 4. Importing the module in an IDE
 
 To import the module into an IDE, run
 
@@ -50,18 +41,14 @@ To import the module into an IDE, run
 	
 to create projects for the IDE of your choice and then import the project.
 
-========================================================================
-5. Tests
-========================================================================
+##### 5. Tests
 
 There are unit tests in WaterPointJsonHelperTest that run against a
 much smaller but similar dataset. There is also an integration test in
 WaterPointServiceTest that asserts that the query to the remote service
 yields a result.
 
-========================================================================
-6. Architecture
-========================================================================
+##### 6. Architecture
 
 This module is a stand alone application that starts up an embedded
 Jetty server that queries the remote service when a request to
