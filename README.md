@@ -1,5 +1,5 @@
-##### Author: Ndung'u Mbiyu
-##### Date:	29th May 2016
+#### Author: Ndung'u Mbiyu
+#### Date:	29th May 2016
 
 ##### 1. Required Software
 
