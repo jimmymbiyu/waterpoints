@@ -51,6 +51,33 @@ public class CommunityWaterPoints {
     }
 
     @Override
+    public int hashCode() {
+
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + brokenWaterPoints;
+        result = prime * result + functionalWaterPoints;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        CommunityWaterPoints other = (CommunityWaterPoints) obj;
+        if (brokenWaterPoints != other.brokenWaterPoints)
+            return false;
+        if (functionalWaterPoints != other.functionalWaterPoints)
+            return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
 
         return "WaterPoint [functionalWaterPoints=" + functionalWaterPoints

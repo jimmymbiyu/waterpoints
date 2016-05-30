@@ -67,4 +67,49 @@ public class CommunitiesWaterPointsReport {
 
         return workingWaterPoints + brokenWaterPoints;
     }
+
+    @Override
+    public int hashCode() {
+
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + brokenWaterPoints;
+        result = prime * result
+                + ((communityNameToCommunityWaterPointsMap == null) ? 0
+                        : communityNameToCommunityWaterPointsMap.hashCode());
+        result = prime * result + workingWaterPoints;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        CommunitiesWaterPointsReport other = (CommunitiesWaterPointsReport) obj;
+        if (brokenWaterPoints != other.brokenWaterPoints)
+            return false;
+        if (communityNameToCommunityWaterPointsMap == null) {
+            if (other.communityNameToCommunityWaterPointsMap != null)
+                return false;
+        } else if (!communityNameToCommunityWaterPointsMap
+                .equals(other.communityNameToCommunityWaterPointsMap))
+            return false;
+        if (workingWaterPoints != other.workingWaterPoints)
+            return false;
+        return true;
+    }
+
+    @Override
+    public String toString() {
+
+        return "CommunitiesWaterPointsReport [communityNameToCommunityWaterPointsMap="
+                + communityNameToCommunityWaterPointsMap
+                + ", workingWaterPoints=" + workingWaterPoints
+                + ", brokenWaterPoints=" + brokenWaterPoints + "]";
+    }
 }
