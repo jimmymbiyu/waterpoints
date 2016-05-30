@@ -47,7 +47,7 @@ public class WaterPointJsonHelperTest {
 
     @Test
     public void testProcessJson_OnlyValidWaterPointsAreRecorded()
-            throws IOException {
+            throws IOException, JsonParsingException {
 
         CommunitiesWaterPointsReport communitiesWaterPointsReport =
                 waterPointJsonHelper.processJson(json);
@@ -56,7 +56,8 @@ public class WaterPointJsonHelperTest {
     }
 
     @Test
-    public void testProcessJson_WaterPointCount() throws IOException {
+    public void testProcessJson_WaterPointCount()
+            throws IOException, JsonParsingException {
 
         CommunitiesWaterPointsReport communitiesWaterPointsReport =
                 waterPointJsonHelper.processJson(json);

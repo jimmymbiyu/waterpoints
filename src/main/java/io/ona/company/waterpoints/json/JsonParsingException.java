@@ -6,7 +6,7 @@ package io.ona.company.waterpoints.json;
  * @author Ndung'u Mbiyu
  *
  */
-public class JsonParsingException extends RuntimeException {
+public class JsonParsingException extends Exception {
 
     /**
      * 
