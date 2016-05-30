@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class WaterPointStatusTest {
 
     @Test
-    public void testCreate_ThrowsExceptionOnUnknownRawInput() {
+    public void testFromString_ThrowsExceptionOnUnknownRawInput() {
 
         try {
             String unknownRawInput = "unknown";
@@ -22,7 +22,7 @@ public class WaterPointStatusTest {
     }
 
     @Test
-    public void testCreate_IsCaseInsensitive()
+    public void testFromString_IsCaseInsensitive()
             throws UnknownWaterPointStatusTextException {
 
         assertEquals(WaterPointStatus.fromString("YES"),
