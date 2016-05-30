@@ -58,3 +58,14 @@ There are unit tests in WaterPointJsonHelperTest that run against a
 much smaller but similar dataset. There is also an integration test in
 WaterPointServiceTest that asserts that the query to the remote service
 yields a result.
+
+========================================================================
+6. Architecture
+========================================================================
+
+This module is a stand alone application that starts up an embedded
+Jetty server that queries the remote service when a request to
+http://localhost:8090/waterpoints/summary.do is received. The main class
+is io.ona.company.waterpoints.config.WaterPointsServer.
+
+Maven is used for dependency management and also manages the build.
