@@ -28,7 +28,7 @@ To package and run the application, run
 	mvn clean package
 	java -jar target/waterpoints-1.0-SNAPSHOT-jar-with-dependencies.jar
 	
-Navigate to http://localhost:8090/waterpoints/summary.do to view the summary of community water points.
+Navigate to <http://localhost:8090/waterpoints/summary.do> to view the summary of community water points.
 
 To close the program, issue the Control-C command on the terminal that lauched the program.
 	
@@ -43,4 +43,4 @@ to create projects for the IDE of your choice and then import the project.
 
 ##### Tests
 
-There are unit tests in WaterPointJsonHelperTest that run against a much smaller but similar dataset. There is also an integration test in WaterPointServiceTest that asserts that the query to the remote service yields a result.
+There are unit tests in `WaterPointJsonHelperTest` that run against a much smaller but similar dataset. There is also an integration test in `WaterPointServiceTest` that asserts that the query to the remote service yields a result.
