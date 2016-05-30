@@ -4,10 +4,7 @@
 
 ##### Architecture
 
-This module is a stand alone application that starts up an embedded
-Jetty server that queries the remote service when a request to
-http://localhost:8090/waterpoints/summary.do is received. The main class
-is io.ona.company.waterpoints.config.WaterPointsServer.
+This module is a stand alone application that starts up an embedded Jetty server that queries the endpoint <https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json> when a request to <http://localhost:8090/waterpoints/summary.do> is received. The main class is `io.ona.company.waterpoints.config.WaterPointsServer`.
 
 Maven is used for dependency management and also manages the build.
 
